@@ -62,3 +62,16 @@ switch (num) {
     console.log("末吉です");
     break;
 }
+
+let userName = ("女性", "男性", "子供");
+switch (userName) {
+  case "女性":
+    console.log("red");
+    break;
+  case 2:
+    console.log("blue");
+    break;
+  case 3:
+    console.log("yellow");
+    break;
+}
