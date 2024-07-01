@@ -46,6 +46,7 @@ const li = document.createElement("li");
 
 // 作成したli要素にテキストを追加する
 li.textContent = "JavaScriptで新しく作成したリスト3";
-
+li.innerHTML = '<a href="#">JavaScriptで新しく作成したリスト4"</a>';
+li.innerHTML = 'JavaScriptで新しく作成したリスト3"';
 // ul要素の末尾にli要素を追加する
 document.querySelector("ul").appendChild(li);
