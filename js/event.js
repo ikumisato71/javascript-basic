@@ -18,3 +18,39 @@ addBtn.addEventListener("click", () => {
   // 作成したli要素をul要素の子要素として末尾に追加する
   parentList.appendChild(childList);
 });
+
+// count-btnというidを持つHTML要素を取得し、定数に代入する
+const countBtn = document.getElementById("count-btn");
+// HTML要素がクリックされた時にイベント処理を実行する
+countBtn.addEventListener("click", () => {
+  // テキストボックスに入力された文字列を取得する
+  const text = document.forms.textForm.textBox.value;
+  // 取得した文字列の文字数を出力
+  console.log(text.length + "文字");
+});
+
+// area-btnというidを持つHTML要素を取得し、定数に代入する
+const areaBtn = document.getElementById("area-btn");
+
+// HTML要素がクリックされた時にイベント処理を実行する
+areaBtn.addEventListener("click", () => {
+  // 選択されたラジオボタンの値を取得する
+  const area = document.forms.areaForm.area.value;
+  // 崇徳した値を出力
+  console.log(area);
+});
+
+// os-btnというidを持つHTML要素を取得し、定数に代入する
+const osBtn = document.getElementById("os-btn");
+
+// HTML要素がクリックされた時にイベント処理を実行する
+osBtn.addEventListener("click", () => {
+  // 全てのチェックボックスを入れ符分のデーター取得する
+  const items = document.forms.osForm.os;
+  // 繰り返し処理で直ボックスを１つずつ取り出し、もし選択されていれば値を出力
+  for (let i = 0; i < items.length; i++) {
+    if (items[i].checked) {
+      console.log(items[i].value);
+    }
+  }
+});
