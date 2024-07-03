@@ -2,6 +2,7 @@
 const backBtn = document.getElementById("back-btn");
 
 // 画面がスクロールされた時にイベント処理を実行
+// window.documentでもdocument.でも動作しますが、ツリーの頂点のwindowに指示する理由ありますか？
 window.addEventListener("scroll", () => {
   //　画面のスクロール値をpxで取得する
   const scrollValue = document.scrollingElement.scrollTop;
