@@ -5,8 +5,8 @@ console.log(document.body);
 // windowオブジェクトの中身を出力する
 console.log(window);
 
-// HTLM要素をidで取得し中身を出力する
-console.log(document.getElementById("first-heading"));
+// HTML要素をidで取得し中身を出力する
+console.log(document.getElementById("first-list"));
 
 // HTML要素をclassで取得し、中身を出力する
 console.log(document.getElementsByClassName("heading"));
@@ -44,7 +44,7 @@ for (let i = 0; i < cssLists.length; i++) {
 // 新しくli要素を作成し、定数を代入する
 const li = document.createElement("li");
 
-// 作成したli要素にテキストを追加する
+// 作成したli要素にテキストを追加する（3つ試した、最後しか表示されない。）
 li.textContent = "JavaScriptで新しく作成したリスト3";
 li.innerHTML = '<a href="#">JavaScriptで新しく作成したリスト4"</a>';
 li.innerHTML = 'JavaScriptで新しく作成したリスト3"';
